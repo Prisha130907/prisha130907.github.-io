@@ -1,0 +1,109 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff0f5;
+    color: #5c0a3b;
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+    background: #ffe6f0;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2);
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.second-card {
+    background: #fff5fa;
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.15);
+}
+
+.third-card {
+    position: relative;
+    overflow: hidden;
+    background: #fff8fb;
+    box-shadow: 0 8px 20px rgba(255, 192, 203, 0.15);
+}
+
+.innerCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.decorated-message {
+    position: relative;
+    z-index: 1;
+    font-size: 14px;
+    color: #5c0a3b;
+    background-color: #fff0f5;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.decorated-message .icon {
+    margin: 0 4px;
+}
+
+.decorated-message .highlight-name {
+    color: #ff3399;
+    font-weight: bold;
+}
+
+.poem {
+    font-style: italic;
+    margin-top: 15px;
+    text-align: left;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #6e0f44;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background: repeating-linear-gradient(to right, #ff99cc, #ff99cc 5px, transparent 5px, transparent 10px);
+    margin: 15px 0;
+}
+
+#heartsCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+}
+
+button {
+    background-color: #ff4d88;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #e60073;
+    transform: scale(1.05);
+}
